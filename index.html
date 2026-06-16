@@ -15,6 +15,7 @@
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#chat">Chat</a></li>
                 <li><a href="#download">Download</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
@@ -26,16 +27,16 @@
             <div class="hero-content">
                 <h1>GitMindBloom</h1>
                 <p class="tagline">Your Personal Schizophrenia Management Companion</p>
-                <p class="description">Take control of your mental health journey. Track symptoms, manage medications, monitor mood patterns, and stay connected with your care team. Built for you, by people who understand.</p>
+                <p class="description">Take control of your mental health journey. Track symptoms, manage medications, monitor mood patterns, and chat with our supportive AI. Built for you, by people who understand.</p>
                 <div class="hero-buttons">
-                    <a href="#download" class="btn btn-primary">Download Now</a>
+                    <a href="#chat" class="btn btn-primary">Chat Now</a>
                     <a href="#about" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="phone-frame">
                     <div class="phone-screen">
-                        <div class="app-preview">📱 Mood Tracker</div>
+                        <div class="app-preview">💬 Daily Check-in</div>
                     </div>
                 </div>
             </div>
@@ -62,20 +63,57 @@
                     <p>Log hallucinations, delusions, disorganized thoughts, and other symptoms. Get insights and triggers.</p>
                 </div>
                 <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>AI Chat Support</h3>
+                    <p>Talk to our compassionate AI chatbot about how you're feeling. Get personalized support anytime.</p>
+                </div>
+                <div class="feature-card">
                     <div class="feature-icon">📊</div>
                     <h3>Analytics & Insights</h3>
                     <p>Beautiful charts and reports showing your progress. Export data to share with your healthcare team.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔔</div>
-                    <h3>Smart Reminders</h3>
-                    <p>Customizable reminders for medications, therapy appointments, and daily check-ins.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3>Privacy & Security</h3>
                     <p>End-to-end encryption. Your health data stays completely private and secure.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chat" class="chat-section">
+        <div class="container">
+            <h2>Daily Check-in Chat</h2>
+            <p class="chat-intro">Start a conversation with GitMindBloom. Share how you're feeling today and get supportive guidance.</p>
+            
+            <div class="chat-container">
+                <div class="chat-window">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">🌿</div>
+                            <div class="message-content">
+                                <p>Hello! I'm here to listen and support you. How are you feeling today?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <div class="input-group">
+                        <input type="text" id="userInput" class="chat-input" placeholder="Tell me how you're feeling..." />
+                        <button id="sendBtn" class="send-btn">Send</button>
+                    </div>
+                    <div class="quick-responses">
+                        <button class="quick-btn" onclick="handleQuickResponse('I am feeling happy today')">😊 Happy</button>
+                        <button class="quick-btn" onclick="handleQuickResponse('I am feeling anxious')">😰 Anxious</button>
+                        <button class="quick-btn" onclick="handleQuickResponse('I am feeling sad')">😢 Sad</button>
+                        <button class="quick-btn" onclick="handleQuickResponse('I am experiencing symptoms')">⚠️ Symptoms</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-info">
+                <p><strong>Note:</strong> This chatbot provides supportive conversation, not medical advice. For emergencies, please contact crisis services or your healthcare provider.</p>
             </div>
         </div>
     </section>
@@ -134,8 +172,8 @@
                     <p>Daily mood and symptom logging</p>
                 </div>
                 <div class="screenshot-card">
-                    <div class="screenshot-placeholder">📱 Medication Manager</div>
-                    <p>Track your medication schedule</p>
+                    <div class="screenshot-placeholder">📱 Chat Support</div>
+                    <p>Talk with our AI companion</p>
                 </div>
                 <div class="screenshot-card">
                     <div class="screenshot-placeholder">📱 Analytics</div>
@@ -174,7 +212,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About GitMindBloom</h2>
-            <p>GitMindBloom is a compassionate mental health management app specifically designed for individuals living with schizophrenia. Our mission is to empower you to take an active role in managing your condition through tracking, insights, and data-driven support.</p>
+            <p>GitMindBloom is a compassionate mental health management app specifically designed for individuals living with schizophrenia. Our mission is to empower you to take an active role in managing your condition through tracking, insights, and supportive conversations.</p>
             
             <div class="about-content">
                 <div class="about-section">
@@ -184,12 +222,12 @@
                 
                 <div class="about-section">
                     <h3>💡 Why GitMindBloom?</h3>
-                    <p>Living with schizophrenia can be challenging. Memory issues, difficulty tracking patterns, and managing multiple medications can feel overwhelming. GitMindBloom simplifies this by providing a single, beautiful platform where you can log everything and see your progress clearly.</p>
+                    <p>Living with schizophrenia can be challenging. Memory issues, difficulty tracking patterns, and managing multiple medications can feel overwhelming. GitMindBloom simplifies this by providing a single, beautiful platform where you can log everything, chat with support, and see your progress clearly.</p>
                 </div>
                 
                 <div class="about-section">
                     <h3>🤝 For Caregivers & Providers</h3>
-                    <p>Share your data with family members or healthcare providers. Generate reports that show your symptoms, medication adherence, and mood trends. Better data means better care decisions.</p>
+                    <p>Share your data with family members or healthcare providers. Generate reports that show your symptoms, medication adherence, mood trends, and chat history. Better data means better care decisions.</p>
                 </div>
             </div>
 
@@ -197,6 +235,7 @@
                 <h3>Built With Care Using</h3>
                 <div class="tech-badges">
                     <span class="badge">SwiftUI</span>
+                    <span class="badge">AI Chatbot</span>
                     <span class="badge">HIPAA Compliant</span>
                     <span class="badge">End-to-End Encryption</span>
                     <span class="badge">iOS 15+</span>
